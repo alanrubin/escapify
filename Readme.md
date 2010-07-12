@@ -8,13 +8,13 @@ correctly in your page. For more details about HTML entities, please take a look
 
 Escapify adds two methods to jQuery:
 
-* $.escapifyHTML(text) - Search the text for applicable characters and convert them to HTML entities. 
-Example: $.escapifyHTML('Alan<Rubin>&ehlegal') returns 'Alan&lt;Rubin&gt;&amp;ehlegal'
+* $.escapifyHTML(text) - Search the text for applicable characters and convert them to HTML entities.   
+	Example: $.escapifyHTML('Alan<Rubin>&ehlegal') returns 'Alan&lt;Rubin&gt;&amp;ehlegal'
 	
-* $.unescapifyHTML(text) - Search the text for HTML entities and convert them to specific characters.
-Example: $.unescapifyHTML('Alan&lt;Rubin&gt;&amp;ehlegal') returns 'Alan<Rubin>&ehlegal'
+* $.unescapifyHTML(text) - Search the text for HTML entities and convert them to specific characters.   
+	Example: $.unescapifyHTML('Alan&lt;Rubin&gt;&amp;ehlegal') returns 'Alan<Rubin>&ehlegal'
 
-## Anecdote (and UseCase)
+## Anecdote (and Use Case)
 
 I was working with [JQuery editable plugin](http://www.appelsiini.net/projects/jeditable) (inplace editing), and text with HTML entities / applicable characters were 
 being displayed incorrectly. By looking at [github's issue](http://github.com/tuupola/jquery_jeditable/issues#issue/4), I have found an easy way to escape them using jQuery and I thought it will be nice to create a jQuery plugin to provide it to the world. Hope it helps... Suggestions are warmly welcomed.
