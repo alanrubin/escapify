@@ -1,5 +1,5 @@
 
-0.0.1 / YYYY-MM-DD
+0.1.0 / 2010-07-13
 ------------------
 
-* Initial release
+* Initial release : escapifyHTML and unescapifyHTML methods available
