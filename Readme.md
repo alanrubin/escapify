@@ -2,23 +2,22 @@
 # JQuery Escapify Plugin - Helping escaping HTML in javascript
 
 Escapify is a jQuery plugin that helps you escape and unescape HTML entities for displaying them 
-correctly in your page. For more details about HTML entities, please take a look at http://www.w3schools.com/html/html_entities.asp.
+correctly in your page. For more details about HTML entities, please take a look [here](http://www.w3schools.com/html/html_entities.asp).
 
 ## Usage
 
 Escapify adds two methods to jQuery:
 
 * $.escapifyHTML(text) - Search the text for applicable characters and convert them to HTML entities. 
-Example: $.escapifyHTML('My Name Is & <AlanRubin>') returns ''
+Example: $.escapifyHTML('Alan<Rubin>&ehlegal') returns 'Alan&lt;Rubin&gt;&amp;ehlegal'
 	
 * $.unescapifyHTML(text) - Search the text for HTML entities and convert them to specific characters.
-Example: $.unescapifyHTML('My Name Is & <AlanRubin>') returns ''
+Example: $.unescapifyHTML('Alan&lt;Rubin&gt;&amp;ehlegal') returns 'Alan<Rubin>&ehlegal'
 
-## Anecdote
+## Anecdote (and UseCase)
 
-I was working with JQuery editable plugin (in place editing), and text with HTML entities / applicable characters were 
-being displayed incorrectly. By looking here (), I have found an easy way to escape them using jQuery and I thought it will be nice
-to create a jQuery plugin to provide it to the world. Hope it helps... Suggestions are warmly welcomed.
+I was working with [JQuery editable plugin](http://www.appelsiini.net/projects/jeditable) (inplace editing), and text with HTML entities / applicable characters were 
+being displayed incorrectly. By looking at [github's issue](http://github.com/tuupola/jquery_jeditable/issues#issue/4), I have found an easy way to escape them using jQuery and I thought it will be nice to create a jQuery plugin to provide it to the world. Hope it helps... Suggestions are warmly welcomed.
 
 ## License 
 
