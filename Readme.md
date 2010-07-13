@@ -25,7 +25,7 @@ being displayed incorrectly. By looking at [github's issue](http://github.com/tu
 
 My working code with escapify and editable was:
 
-`$(".ews-state-active > div > a").editable(function(value, settings) {
+	`$(".ews-state-active > div > a").editable(function(value, settings) {
 		// Change title in server - AJAX request is done
 		WorkspaceManager.currentPage().title(value);
 		// Escape value for displaying after edit is completed as it will be displayed as HTML
@@ -34,7 +34,7 @@ My working code with escapify and editable was:
 	{ data: function(value){
 		// Escape value for displaying inside the input form as it will displayed as TEXT
 		return $.unescapifyHTML(value);
-}});`
+	}});`
 
 ## License 
 
