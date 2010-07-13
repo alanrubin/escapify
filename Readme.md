@@ -9,10 +9,10 @@ correctly in your page. For more details about HTML entities, please take a look
 Escapify adds two methods to jQuery:
 
 * $.escapifyHTML(text) - Search the text for applicable characters and convert them to HTML entities.   
-	Example: $.escapifyHTML('Alan<Rubin>&ehlegal') returns 'Alan&lt;Rubin&gt;&amp;ehlegal'
+	Example: **$.escapifyHTML('Alan&lt;Rubin&gt;&amp;ehlegal')** returns 'Alan&amp;lt;Rubin&amp;gt;&amp;amp;ehlegal'
 	
 * $.unescapifyHTML(text) - Search the text for HTML entities and convert them to specific characters.   
-	Example: $.unescapifyHTML('Alan&lt;Rubin&gt;&amp;ehlegal') returns 'Alan<Rubin>&ehlegal'
+	Example: **$.unescapifyHTML('Alan&amp;lt;Rubin&amp;gt;&amp;amp;ehlegal')** returns 'Alan&lt;Rubin&gt;&amp;ehlegal'
 
 ## Anecdote (and Use Case)
 
